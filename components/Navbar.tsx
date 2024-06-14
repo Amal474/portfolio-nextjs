@@ -1,9 +1,41 @@
+"use client";
+
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { usePathname } from "next/navigation";
+
+const links = [
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "Skills",
+    path: "/skills",
+  },
+  {
+    name: "Projects",
+    path: "/projects",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+  },
+]
 
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
-    <nav>Nav BAr</nav>
+    <nav className="flex gap-8">
+      {links.map((link, index) => {
+        return (
+          <Link href={link.path} key={index} className={`${link.path === pathname && 
+          "text=accent border-b-2 border-accent"} font-medium hover:text-accent transition-all`}>
+            {link.name}
+          </Link>
+        );
+      })}
+    </nav>
   );
 }
