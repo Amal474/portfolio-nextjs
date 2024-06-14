@@ -4,6 +4,7 @@ import "./globals.css";
 
 // Custom Components
 import Header from "@/components/Header";
+import PageTransition from "@/components/PageTransition";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header/>
-        {children}
+        <PageTransition>
+          {children}
+        </PageTransition>
+        
         </body>
     </html>
   );
