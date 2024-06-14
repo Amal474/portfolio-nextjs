@@ -32,6 +32,13 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      colors: {
+        primary: '#050506',
+        accent: {
+          DEFAULT: '#1a75ff',
+          hover: '#4d94ff',
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
