@@ -13,7 +13,7 @@ export default function Header() {
         <h1 className="text-4xl font-semibold">
           Mohammed Amal N
         </h1>
-        <div className="hidden md:flex">
+        <div className="hidden md:flex items-center gap-8">
           <Navbar/>
           <Link href={"/contact"}>
             <Button>Contact Me</Button>
