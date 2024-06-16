@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 
 // Custom Components
 import Navbar from "./Navbar";
+import MobileNav from "./MobileNav";
 
 
 export default function Header() {
@@ -18,7 +19,9 @@ export default function Header() {
             <Button>Contact Me</Button>
           </Link>
         </div>
-        <div className="md:hidden">Mobile Nav</div>
+        <div className="md:hidden">
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
