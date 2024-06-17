@@ -13,7 +13,7 @@ export default function Photo() {
                     transition: {delay: 2, duration: 3,}
                   }}
       >
-        <div className="w-[298px] h-[298px] xl:w-[498px] xl-[h-498px] mix-blend-lighten absolute">
+        <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
           <Image src="/portfolio-nextjs/assets/dp.png"
                  priority
                  quality={100}
