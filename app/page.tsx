@@ -19,7 +19,7 @@ export default function Home() {
               <span className="text-accent">Mohammed Amal</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I&apos;m a software developer and an ERP techno-functional consultant. I'm proficient in various prgramming languages
+              I&apos;m a software developer and an ERP techno-functional consultant. I&apos;m proficient in various prgramming languages
               and technologies.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
