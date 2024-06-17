@@ -14,11 +14,11 @@ export default function Photo() {
                   }}
       >
         <div className="w-[298px] h-[298px] xl:w-[498px] xl-[h-498px] mix-blend-lighten absolute">
-          <Image src="/portfolio-nextjs/assets/photo.png"
+          <Image src="/portfolio-nextjs/assets/dp.png"
                  priority
                  quality={100}
                  fill
-                 alt="my-image-cartoon"
+                 alt="my-image"
                  className="object-contain"/>
         </div>
         <motion.svg className="w-[300px] xl:w-[500px] h-[300px] xl:h-[506px]"
