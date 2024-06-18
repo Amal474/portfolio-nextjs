@@ -36,11 +36,11 @@ export default function Technologies() {
         
           {technologies.map((technology, index) => {
             return (
-              <motion.div whileHover={{ scaleX: 1.2 }}
-                    whileTap={{scaleX: 0.8 }}
-                    className="grid grid-cols-1 md-grid-cols-2 gap-[60px]">
-                <div key={index}
-                    className="flex-1 flex flex-col justify-center gap-6 group">
+              <div key={index}
+                  className="flex-1 flex flex-col justify-center gap-6 group">
+                <motion.div whileHover={{ scaleX: 1.2 }}
+                      whileTap={{scaleX: 0.8 }}
+                      className="grid grid-cols-1 md-grid-cols-2 gap-[60px]">
                   <div className="w-full flex justify-between items-center">
                     <div className="text-5xl font-extrabold text-outline tex-transparent group-hover:text-outline-hover 
                     transition-all duration-500">
@@ -52,8 +52,8 @@ export default function Technologies() {
                   </h2>
                   <p className="text-white/60">{technology.description}</p>
                   <div className="border-b border-white/20 w-full"></div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </div>
             );
           })}
       </div>
