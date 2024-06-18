@@ -5,6 +5,7 @@ import { FileDownIcon } from "lucide-react";
 import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import Technologies from "@/components/Technologies";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
         </div>
       </div>
       <Stats />
+      <Technologies />
     </section>
   );
 }

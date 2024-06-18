@@ -43,6 +43,7 @@ export default function Stats() {
           })}
         </div>
       </div>
+      <div className="border-b border-white/20 w-full"></div>
     </section>
   );
 }

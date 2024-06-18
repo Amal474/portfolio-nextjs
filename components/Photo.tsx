@@ -10,7 +10,7 @@ export default function Photo() {
       <motion.div animate={{
                     scale: [1, 0.5, 1, 1.5, 2, 1.5, 1],
                     rotate: [0, 0, 72, 144, 216, 288, 360],
-                    transition: {delay: 2, duration: 3,}
+                    transition: {delay: 2, duration: 2,}
                   }}
       >
         <div className="w-[250px] h-[250px] xl:w-[450px] xl:h-[450px] mix-blend-lighten absolute">
