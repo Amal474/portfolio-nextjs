@@ -39,24 +39,24 @@ const about = {
       fieldValue: "+966-532136275"
     },
     {
+      fieldName: "Email",
+      fieldValue: "mohammedamal.n@gmail.com"
+    },
+    {
+      fieldName: "WhatsApp",
+      fieldValue: "+91-9447236422"
+    },
+    {
       fieldName: "Experience",
-      fieldValue: "8+"
+      fieldValue: "8+ Years"
     },
     {
       fieldName: "Nationality",
       fieldValue: "Indian"
     },
     {
-      fieldName: "Email",
-      fieldValue: "mohammedamal.n@gmail.com"
-    },
-    {
       fieldName: "Languages",
       fieldValue: "English, Malayalam"
-    },
-    {
-      fieldName: "WhatsApp",
-      fieldValue: "+91-9447236422"
     },
   ]
 }
@@ -185,7 +185,7 @@ export default function Skills() {
                         <span className="text-accent">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                         <div className="flex items-center gap-3">
-                          <span className="w-[60px] h-[6px] rounded-full bg-accent"></span>
+                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                           <p className="text-white/60">{item.company}</p>
                         </div>
                       </li>

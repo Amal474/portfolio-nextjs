@@ -22,7 +22,7 @@ const technologies = [
   },
   {
     num: "04",
-    title: "Odoo TechnoFunctional Consultany",
+    title: "Odoo TechnoFunctional Consultant",
     description: 
     "Combining technical expertise with functional knowledge, providing seamless integration, customization and optimization of Odoo for your business needs",
   },
