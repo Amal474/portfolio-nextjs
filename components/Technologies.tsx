@@ -33,28 +33,29 @@ export default function Technologies() {
   return (
     <section className="min-h-[100vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto">
-        <motion.div whileHover={{ scale: 1.2 }}
-                    whileTap={{scale: 0.8 }}
-                    className="grid grid-cols-1 md-grid-cols-2 gap-[60px]">
+        
           {technologies.map((technology, index) => {
             return (
-              <div key={index}
-                   className="flex-1 flex flex-col justify-center gap-6 group">
-                <div className="w-full flex justify-between items-center">
-                  <div className="text-5xl font-extrabold text-outline tex-transparent group-hover:text-outline-hover 
-                  transition-all duration-500">
-                    {technology.num}
+              <motion.div whileHover={{ scaleX: 1.2 }}
+                    whileTap={{scaleX: 0.8 }}
+                    className="grid grid-cols-1 md-grid-cols-2 gap-[60px]">
+                <div key={index}
+                    className="flex-1 flex flex-col justify-center gap-6 group">
+                  <div className="w-full flex justify-between items-center">
+                    <div className="text-5xl font-extrabold text-outline tex-transparent group-hover:text-outline-hover 
+                    transition-all duration-500">
+                      {technology.num}
+                    </div>
                   </div>
+                  <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                    {technology.title}
+                  </h2>
+                  <p className="text-white/60">{technology.description}</p>
+                  <div className="border-b border-white/20 w-full"></div>
                 </div>
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
-                  {technology.title}
-                </h2>
-                <p className="text-white/60">{technology.description}</p>
-                <div className="border-b border-white/20 w-full"></div>
-              </div>
+              </motion.div>
             );
           })}
-        </motion.div>
       </div>
     </section>
   );
