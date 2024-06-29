@@ -19,20 +19,21 @@ import {
   FaEnvelope, 
   FaMapMarkedAlt,
   FaWhatsapp,
+  FaFlag,
 } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 
 const info = [
   {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "+966-532136275",
-  },
-  {
     icon: <FaEnvelope />,
     title: "Email",
     description: "mohammedamal.n@gmail.com",
+  },
+  {
+    icon: <FaPhoneAlt />,
+    title: "Phone",
+    description: "+966-532136275",
   },
   {
     icon: <FaWhatsapp />,
@@ -43,6 +44,11 @@ const info = [
     icon: <FaMapMarkedAlt />,
     title: "Current Location",
     description: "Riyadh, KSA",
+  },
+  {
+    icon: <FaFlag />,
+    title: "State, Country",
+    description: "Kerala, India",
   },
 ]
 
