@@ -38,9 +38,8 @@ export default function Technologies() {
             return (
               <div key={index}
                   className="flex-1 flex flex-col justify-center gap-6 group">
-                <motion.div whileHover={{ scaleX: 1.1 }}
-                      whileTap={{scaleX: 0.8 }}
-                      className="grid grid-cols-1 md-grid-cols-2 gap-[60px]">
+                <motion.div whileTap={{scaleX: 0.8 }}
+                            className="grid grid-cols-1 md-grid-cols-2 gap-[60px]">
                   <div className="w-full flex justify-between items-center">
                     <div className="text-5xl font-extrabold text-outline tex-transparent group-hover:text-outline-hover 
                     transition-all duration-500">

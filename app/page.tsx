@@ -25,7 +25,9 @@ export default function Home() {
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-                <span>Download CV</span>
+                
+                <a href="/portfolio-nextjs/assets/CV_Mohammed_Amal_N_Software_Developer.pdf" download="CV_Mohammed_Amal_N_Software_Developer">Download CV</a>
+                {/* <span>Download CV</span> */}
                 <FileDownIcon className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">

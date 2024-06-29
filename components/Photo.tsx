@@ -7,12 +7,9 @@ export default function Photo() {
 
   return (
     <div className="w-full h-full relative">
-      <motion.div animate={{
-                    scale: [1, 0.5, 1, 1.5, 2, 1.5, 1],
-                    rotate: [0, 0, 72, 144, 216, 288, 360],
-                    transition: {delay: 2, duration: 2,}
-                  }}
-      >
+      <motion.div initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 2.4, duration: 0.5 }}>
         <div className="w-[250px] h-[250px] xl:w-[450px] xl:h-[450px] mix-blend-lighten absolute">
           <Image src="/portfolio-nextjs/assets/dp.png"
                  priority
